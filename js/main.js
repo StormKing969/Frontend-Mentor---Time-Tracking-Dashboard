@@ -6,11 +6,10 @@ var socialInfo = [];
 var self_careInfo = [];
 
 function DailyData() {
-    // Hover
     $("#daily").css("color", "hsl(236, 100%, 87%)");
-
-    $("#weekly").css("color", "hsl(235, 45%, 61%)");
+    
     $("#monthly").css("color", "hsl(235, 45%, 61%)");
+    $("#weekly").css("color", "hsl(235, 45%, 61%)");
 
     $.ajax({
         dataType: 'json',
@@ -74,9 +73,8 @@ function DailyData() {
 }
 
 function WeeklyData() {
-    // Hover
     $("#weekly").css("color", "hsl(236, 100%, 87%)");
-
+    
     $("#daily").css("color", "hsl(235, 45%, 61%)");
     $("#monthly").css("color", "hsl(235, 45%, 61%)");
 
@@ -142,12 +140,10 @@ function WeeklyData() {
 }
 
 function MonthlyData() {
-    // Hover
     $("#monthly").css("color", "hsl(236, 100%, 87%)");
 
     $("#daily").css("color", "hsl(235, 45%, 61%)");
     $("#weekly").css("color", "hsl(235, 45%, 61%)");
-    
 
     $.ajax({
         dataType: 'json',
@@ -210,16 +206,36 @@ function MonthlyData() {
     });
 }
 
-
+// Fetch Data
 
 $("#daily").click(function() {
+    
     DailyData();
+
+    // User Choice
+    
+
+    // $("#monthly").css("color", "hsl(235, 45%, 61%)");
+    // $("#weekly").css("color", "hsl(235, 45%, 61%)");
 });
 
 $("#weekly").click(function() {
     WeeklyData();
+
+    // User Choice
+    $("this").css("color", "hsl(236, 100%, 87%)");
+
+    // $("#daily").css("color", "hsl(235, 45%, 61%)");
+    // $("#monthly").css("color", "hsl(235, 45%, 61%)");
 });
 
 $("#monthly").click(function() {
     MonthlyData();
+
+    // User Choice
+    // $("this").css("color", "hsl(236, 100%, 87%)");
+
+    // $("#daily").css("color", "hsl(235, 45%, 61%)");
+    // $("#weekly").css("color", "hsl(235, 45%, 61%)");
+
 });

@@ -425,3 +425,166 @@ p {
 }
 
 /* =========== Attribution End =========== */
+
+/* ====================== Desktop View ====================== */
+@media (min-width: 955px) {
+    .container {
+        display: grid;
+        grid-template-columns: .8fr .7fr .7fr .7fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "profile_class work_class play_class study_class"
+            "profile_class exercise_class social_class self_care_class"
+            "attribution_class attribution_class attribution_class attribution_class";
+        grid-gap: 25px;
+        padding-left: auto;
+        padding-top: auto;
+    }
+
+    .container .user_bg {
+        grid-area: profile_class;
+        height: 100%;
+        position: relative;
+    }
+
+    .container .user_bg .card_profile {
+        position: absolute;
+        width: 100%;
+        height: 65%;
+    }
+
+    .container .user_bg .card_title_content {
+        position: absolute;
+        bottom: 20%;
+    }
+
+    .container .work_bg {
+        grid-area: work_class;
+        height: 90%;
+    }
+
+    .container .card .card_work_content {
+        height: 85%;
+        position: relative;
+    }
+
+    .container .card .card_work_content:hover {
+        background-color: var(--desaturated-blue);
+        cursor: pointer;
+    }
+
+    .container .card .card_work_content .previous_text {
+        position: absolute;
+        bottom: 10%;
+        padding-left: 20px;
+    }
+
+    .container .play_bg {
+        grid-area: play_class;
+        height: 90%;
+    }
+
+    .container .card .card_play_content {
+        height: 85%;
+        position: relative;
+    }
+
+    .container .card .card_play_content:hover {
+        background-color: var(--desaturated-blue);
+        cursor: pointer;
+    }
+
+    .container .card .card_play_content .previous_text {
+        position: absolute;
+        bottom: 10%;
+        padding-left: 20px;
+    }
+
+    .container .study_bg {
+        grid-area: study_class;
+        height: 90%;
+    }
+
+    .container .card .card_study_content {
+        height: 85%;
+        position: relative;
+    }
+
+    .container .card .card_study_content:hover {
+        background-color: var(--desaturated-blue);
+        cursor: pointer;
+    }
+
+    .container .card .card_study_content .previous_text {
+        position: absolute;
+        bottom: 10%;
+        padding-left: 20px;
+    }
+
+    .container .exercise_bg {
+        grid-area: exercise_class;
+        height: 90%;
+    }
+
+    .container .card .card_exercise_content {
+        height: 85%;
+        position: relative;
+    }
+
+    .container .card .card_exercise_content:hover {
+        background-color: var(--desaturated-blue);
+        cursor: pointer;
+    }
+
+    .container .card .card_exercise_content .previous_text {
+        position: absolute;
+        bottom: 10%;
+        padding-left: 20px;
+    }
+
+    .container .social_bg {
+        grid-area: social_class;
+        height: 90%;
+    }
+
+    .container .card .card_social_content {
+        height: 85%;
+        position: relative;
+    }
+
+    .container .card .card_social_content:hover {
+        background-color: var(--desaturated-blue);
+        cursor: pointer;
+    }
+
+    .container .card .card_social_content .previous_text {
+        position: absolute;
+        bottom: 10%;
+        padding-left: 20px;
+    }
+
+    .container .self_care_bg {
+        grid-area: self_care_class;
+        height: 90%;
+    }
+
+    .container .card .card_self_care_content {
+        height: 85%;
+        position: relative;
+    }
+
+    .container .card .card_self_care_content:hover {
+        background-color: var(--desaturated-blue);
+        cursor: pointer;
+    }
+
+    .container .card .card_self_care_content .previous_text {
+        position: absolute;
+        bottom: 10%;
+        padding-left: 20px;
+    }
+
+    .attribution {
+        grid-area: attribution_class;
+    }
+}
