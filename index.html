@@ -15,7 +15,7 @@
   <title>Frontend Mentor | Sajana Wijesinghe | Time tracking dashboard</title>
 
 </head>
-<body onload="importData()">
+<body onload="WeeklyData()">
 
   <div class="container">
 
@@ -38,16 +38,135 @@
 
     <!-- =========== Work Info Start =========== -->
     <div class="card work_bg">
-      <div class="card_work">
-        
-      </div>
-      <div class="card_work_content">
-      <p>Work</p>
-      <p id="work_hours"></p>
-      </div>
+      <div class="card_work"></div>
 
+      <div class="card_work_content">
+        <p class="work_title">Work</p>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <span id="work_hours"></span>
+
+        <p class="previous_text">
+          <span id="work_hours_previous" class="work_hours_previous"></span>
+        </p>
+      </div>
     </div>
     <!-- =========== Work Info End =========== -->
+
+    <!-- =========== Play Info Start =========== -->
+    <div class="card play_bg">
+      <div class="card_play"></div>
+
+      <div class="card_play_content">
+        <p class="play_title">Play</p>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <span id="play_hours"></span>
+        
+        <p class="previous_text">
+          <span id="play_hours_previous" class="play_hours_previous"></span>
+        </p>
+      </div>
+    </div>
+    <!-- =========== Play Info End =========== -->
+
+    <!-- =========== Study Info Start =========== -->
+    <div class="card study_bg">
+      <div class="card_study"></div>
+
+      <div class="card_study_content">
+        <p class="study_title">Study</p>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <span id="study_hours"></span>
+        
+        <p class="previous_text">
+          <span id="study_hours_previous" class="study_hours_previous"></span>
+        </p>
+      </div>
+    </div>
+    <!-- =========== Study Info End =========== -->
+
+    <!-- =========== Exercise Info Start =========== -->
+    <div class="card exercise_bg">
+      <div class="card_exercise"></div>
+
+      <div class="card_exercise_content">
+        <p class="exercise_title">Exercise</p>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <span id="exercise_hours"></span>
+        
+        <p class="previous_text">
+          <span id="exercise_hours_previous" class="exercise_hours_previous"></span>
+        </p>
+      </div>
+    </div>
+    <!-- =========== Exercise Info End =========== -->
+
+    <!-- =========== Social Info Start =========== -->
+    <div class="card social_bg">
+      <div class="card_social"></div>
+
+      <div class="card_social_content">
+        <p class="social_title">Social</p>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <span id="social_hours"></span>
+        
+        <p class="previous_text">
+          <span id="social_hours_previous" class="social_hours_previous"></span>
+        </p>
+      </div>
+    </div>
+    <!-- =========== Social Info End =========== -->
+
+    <!-- =========== Self Care Info Start =========== -->
+    <div class="card self_care_bg">
+      <div class="card_self_care"></div>
+
+      <div class="card_self_care_content">
+        <p class="self_care_title">Self Care</p>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <span id="self_care_hours"></span>
+        
+        <p class="previous_text">
+          <span id="self_care_hours_previous" class="self_care_hours_previous"></span>
+        </p>
+      </div>
+    </div>
+    <!-- =========== Self Care Info End =========== -->
 
     <!-- =========== Attribution Info Start =========== -->
     <div class="attribution">

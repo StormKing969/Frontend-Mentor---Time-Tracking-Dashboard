@@ -100,25 +100,324 @@ p {
     cursor: pointer;
 }
 
+/* =========== Work Start =========== */
+
 .container .work_bg {
     background-color: var(--light-red-work);
+    background-image: url(../images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -10%;
+    background-size: 15%;
+    
 }
 
-.container .card .card_work{
+.container .card .card_work {
     height: 30px;
 }
 
-.container .card .card_work_content{
+.container .card .card_work_content {
     border-radius: 10px;
-    height: 200px;
+    height: 100px;
+    padding: 20px 0px 20px 20px;
     color: var(--pale-blue);
     background-color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+.container .card .card_work_content .work_title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container .card .card_work_content .dots {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.container .card .card_work_content .dots .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.container .card .card_work_content .previous_text {
+    text-align: right;
+    margin-top: 8px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+/* =========== Work End =========== */
+
+/* =========== Play Start =========== */
+
+.container .play_bg {
+    background-color: var(--soft-blue-play);
+    background-image: url(../images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -10%;
+    background-size: 15%;
+}
+
+.container .card .card_play {
+    height: 30px;
+}
+
+.container .card .card_play_content {
+    border-radius: 10px;
+    height: 100px;
+    padding: 20px 0px 20px 20px;
+    color: var(--pale-blue);
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container .card .card_play_content .play_title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container .card .card_play_content .dots {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.container .card .card_play_content .dots .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.container .card .card_play_content .previous_text {
+    text-align: right;
+    margin-top: 8px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+/* =========== Play End =========== */
+
+/* =========== Study Start =========== */
+
+.container .study_bg {
+    background-color: var(--light-red-study);
+    background-image: url(../images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -10%;
+    background-size: 15%;
+}
+
+.container .card .card_study {
+    height: 30px;
+}
+
+.container .card .card_study_content {
+    border-radius: 10px;
+    height: 100px;
+    padding: 20px 0px 20px 20px;
+    color: var(--pale-blue);
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container .card .card_study_content .study_title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container .card .card_study_content .dots {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.container .card .card_study_content .dots .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.container .card .card_study_content .previous_text {
+    text-align: right;
+    margin-top: 8px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+/* =========== Study End =========== */
+
+/* =========== Exercise Start =========== */
+
+.container .exercise_bg {
+    background-color: var(--lime-green-exercise);
+    background-image: url(../images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 0%;
+    background-size: 15%;
+}
+
+.container .card .card_exercise {
+    height: 30px;
+}
+
+.container .card .card_exercise_content {
+    border-radius: 10px;
+    height: 100px;
+    padding: 20px 0px 20px 20px;
+    color: var(--pale-blue);
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container .card .card_exercise_content .exercise_title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container .card .card_exercise_content .dots {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.container .card .card_exercise_content .dots .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.container .card .card_exercise_content .previous_text {
+    text-align: right;
+    margin-top: 8px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+/* =========== Exercise End =========== */
+
+/* =========== Social Start =========== */
+
+.container .social_bg {
+    background-color: var(--violet-social);
+    background-image: url(../images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -15%;
+    background-size: 15%;
+}
+
+.container .card .card_social {
+    height: 30px;
+}
+
+.container .card .card_social_content {
+    border-radius: 10px;
+    height: 100px;
+    padding: 20px 0px 20px 20px;
+    color: var(--pale-blue);
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container .card .card_social_content .social_title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container .card .card_social_content .dots {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.container .card .card_social_content .dots .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.container .card .card_social_content .previous_text {
+    text-align: right;
+    margin-top: 8px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+/* =========== Social End =========== */
+
+/* =========== Self Care Start =========== */
+
+.container .self_care_bg {
+    background-color: var(--soft-orange-self-care);
+    background-image: url(../images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -15%;
+    background-size: 15%;
+}
+
+.container .card .card_self_care {
+    height: 30px;
+}
+
+.container .card .card_self_care_content {
+    border-radius: 10px;
+    height: 100px;
+    padding: 20px 0px 20px 20px;
+    color: var(--pale-blue);
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container .card .card_self_care_content .self_care_title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container .card .card_self_care_content .dots {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.container .card .card_self_care_content .dots .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.container .card .card_self_care_content .previous_text {
+    text-align: right;
+    margin-top: 8px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+/* =========== Self Care End =========== */
 
 /* =========== Attribution Start =========== */
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    color: var(--pale-blue);
 }
 
 .attribution a { 
