@@ -4,13 +4,10 @@ var studyInfo = [];
 var exerciseInfo = [];
 var socialInfo = [];
 var self_careInfo = [];
+var hasBeenClicked = false;
 
 function DailyData() {
-    $("#daily").css("color", "hsl(236, 100%, 87%)");
     
-    $("#monthly").css("color", "hsl(235, 45%, 61%)");
-    $("#weekly").css("color", "hsl(235, 45%, 61%)");
-
     $.ajax({
         dataType: 'json',
         success: function(data) {
@@ -73,11 +70,7 @@ function DailyData() {
 }
 
 function WeeklyData() {
-    $("#weekly").css("color", "hsl(236, 100%, 87%)");
     
-    $("#daily").css("color", "hsl(235, 45%, 61%)");
-    $("#monthly").css("color", "hsl(235, 45%, 61%)");
-
     $.ajax({
         dataType: 'json',
         success: function(data) {
@@ -140,11 +133,7 @@ function WeeklyData() {
 }
 
 function MonthlyData() {
-    $("#monthly").css("color", "hsl(236, 100%, 87%)");
-
-    $("#daily").css("color", "hsl(235, 45%, 61%)");
-    $("#weekly").css("color", "hsl(235, 45%, 61%)");
-
+    
     $.ajax({
         dataType: 'json',
         success: function(data) {
@@ -209,33 +198,32 @@ function MonthlyData() {
 // Fetch Data
 
 $("#daily").click(function() {
-    
     DailyData();
 
-    // User Choice
-    
-
-    // $("#monthly").css("color", "hsl(235, 45%, 61%)");
-    // $("#weekly").css("color", "hsl(235, 45%, 61%)");
+    UserChoice(hasBeenClicked=true, "#daily");
+    $("#monthly").css("color", "hsl(235, 45%, 61%)");
+    $("#weekly").css("color", "hsl(235, 45%, 61%)");
 });
 
 $("#weekly").click(function() {
     WeeklyData();
 
-    // User Choice
-    $("this").css("color", "hsl(236, 100%, 87%)");
-
-    // $("#daily").css("color", "hsl(235, 45%, 61%)");
-    // $("#monthly").css("color", "hsl(235, 45%, 61%)");
+    UserChoice(hasBeenClicked=true, "#weekly");
+    $("#daily").css("color", "hsl(235, 45%, 61%)");
+    $("#monthly").css("color", "hsl(235, 45%, 61%)");
 });
 
 $("#monthly").click(function() {
     MonthlyData();
 
-    // User Choice
-    // $("this").css("color", "hsl(236, 100%, 87%)");
+    UserChoice(hasBeenClicked=true, "#monthly");
 
-    // $("#daily").css("color", "hsl(235, 45%, 61%)");
-    // $("#weekly").css("color", "hsl(235, 45%, 61%)");
-
+    $("#daily").css("color", "hsl(235, 45%, 61%)");
+    $("#weekly").css("color", "hsl(235, 45%, 61%)");
 });
+
+function UserChoice(hasBeenClicked, currentId) {
+    if (hasBeenClicked) {
+        $(currentId).css("color", "hsl(236, 100%, 87%)");
+    }
+}
