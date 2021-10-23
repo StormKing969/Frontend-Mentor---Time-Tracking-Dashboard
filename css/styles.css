@@ -88,14 +88,19 @@ p {
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
+    color: var(--desaturated-blue);
 }
 
 .container .card .card_title_content p {
-    color: var(--desaturated-blue);
     padding: 15px 20px;
 }
 
 .container .card .card_title_content p:hover {
+    color: var(--pale-blue);
+    cursor: pointer;
+}
+
+.chosen {
     color: var(--pale-blue);
     cursor: pointer;
 }

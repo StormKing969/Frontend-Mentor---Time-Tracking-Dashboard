@@ -201,29 +201,28 @@ $("#daily").click(function() {
     DailyData();
 
     UserChoice(hasBeenClicked=true, "#daily");
-    $("#monthly").css("color", "hsl(235, 45%, 61%)");
-    $("#weekly").css("color", "hsl(235, 45%, 61%)");
+    $("#monthly").removeClass("chosen");
+    $("#weekly").removeClass("chosen");
 });
 
 $("#weekly").click(function() {
     WeeklyData();
 
     UserChoice(hasBeenClicked=true, "#weekly");
-    $("#daily").css("color", "hsl(235, 45%, 61%)");
-    $("#monthly").css("color", "hsl(235, 45%, 61%)");
+    $("#daily").removeClass("chosen");
+    $("#monthly").removeClass("chosen");
 });
 
 $("#monthly").click(function() {
     MonthlyData();
 
     UserChoice(hasBeenClicked=true, "#monthly");
-
-    $("#daily").css("color", "hsl(235, 45%, 61%)");
-    $("#weekly").css("color", "hsl(235, 45%, 61%)");
+    $("#daily").removeClass("chosen");
+    $("#weekly").removeClass("chosen");
 });
 
 function UserChoice(hasBeenClicked, currentId) {
     if (hasBeenClicked) {
-        $(currentId).css("color", "hsl(236, 100%, 87%)");
+        $(currentId).addClass("chosen");
     }
 }
