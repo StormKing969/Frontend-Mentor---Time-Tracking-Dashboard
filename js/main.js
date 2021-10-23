@@ -65,7 +65,7 @@ function DailyData() {
             $("#self_care_hours").text(self_careInfo[0][1].current + "hrs").css("font-size", "24px");
             $("#self_care_hours_previous").text("Last Week - " + self_careInfo[0][1].previous + "hrs");
         },
-        url: '../data/data.json'
+        url: '../data.json'
     });
 }
 
@@ -128,7 +128,7 @@ function WeeklyData() {
             $("#self_care_hours").text(self_careInfo[1][1].current + "hrs").css("font-size", "24px");
             $("#self_care_hours_previous").text("Last Week - " + self_careInfo[1][1].previous + "hrs");
         },
-        url: '../data/data.json'
+        url: '../data.json'
     });
 }
 
@@ -191,7 +191,7 @@ function MonthlyData() {
             $("#self_care_hours").text(self_careInfo[2][1].current + "hrs").css("font-size", "24px");
             $("#self_care_hours_previous").text("Last Week - " + self_careInfo[2][1].previous + "hrs");
         },
-        url: '../data/data.json'
+        url: '../data.json'
     });
 }
 
