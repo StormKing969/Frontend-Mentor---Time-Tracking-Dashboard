@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](./screenshots/DesktopView - Daily.JPG)
-![Desktop View](./screenshots/DesktopView - Weekly.JPG)
-![Desktop View](./screenshots/DesktopView - Monthly.JPG)
+![Desktop View](./screenshots/DesktopView-Daily.JPG)
+![Desktop View](./screenshots/DesktopView-Weekly.JPG)
+![Desktop View](./screenshots/DesktopView-Monthly.JPG)
 ![Mobile View](./screenshots/DesktopView.JPG)
 
 ### Links
