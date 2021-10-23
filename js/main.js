@@ -65,7 +65,7 @@ function DailyData() {
             $("#self_care_hours").text(self_careInfo[0][1].current + "hrs").css("font-size", "24px");
             $("#self_care_hours_previous").text("Last Week - " + self_careInfo[0][1].previous + "hrs");
         },
-        url: __dirname + '../data/data.json'
+        url: '../data/data.json'
     });
 }
 
