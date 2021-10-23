@@ -427,40 +427,57 @@ p {
 /* =========== Attribution End =========== */
 
 /* ====================== Desktop View ====================== */
-@media (min-width: 955px) {
+@media (min-width: 980px) {
+    body {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
     .container {
         display: grid;
-        grid-template-columns: .8fr .7fr .7fr .7fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
             "profile_class work_class play_class study_class"
             "profile_class exercise_class social_class self_care_class"
             "attribution_class attribution_class attribution_class attribution_class";
-        grid-gap: 25px;
+        grid-gap: 20px;
         padding-left: auto;
-        padding-top: auto;
+        padding-top: 20%;
     }
 
     .container .user_bg {
         grid-area: profile_class;
-        height: 100%;
-        position: relative;
+        height: 400px;
     }
 
     .container .user_bg .card_profile {
-        position: absolute;
-        width: 100%;
-        height: 65%;
+        position: relative;
+        padding-left: 5%;
+        height: 60%;
     }
 
-    .container .user_bg .card_title_content {
+    .container .user_bg .card_profile > img {
         position: absolute;
-        bottom: 20%;
+        bottom: 50%;
+    }
+
+    .container .user_bg .card_profile > p {
+        position: absolute;
+        padding-left: 5%;
+        bottom: 15px;
+    }
+
+    .container .card .card_title_content {
+        display: block;
     }
 
     .container .work_bg {
         grid-area: work_class;
         height: 90%;
+        margin-bottom: 10%;
+        background-position: 95% 0%;
+        background-size: 25%;
     }
 
     .container .card .card_work_content {
@@ -482,6 +499,9 @@ p {
     .container .play_bg {
         grid-area: play_class;
         height: 90%;
+        margin-bottom: 10%;
+        background-position: 95% 0%;
+        background-size: 25%;
     }
 
     .container .card .card_play_content {
@@ -503,6 +523,9 @@ p {
     .container .study_bg {
         grid-area: study_class;
         height: 90%;
+        margin-bottom: 10%;
+        background-position: 95% 0%;
+        background-size: 25%;
     }
 
     .container .card .card_study_content {
@@ -524,6 +547,8 @@ p {
     .container .exercise_bg {
         grid-area: exercise_class;
         height: 90%;
+        background-position: 95% 0%;
+        background-size: 35%;
     }
 
     .container .card .card_exercise_content {
@@ -545,6 +570,8 @@ p {
     .container .social_bg {
         grid-area: social_class;
         height: 90%;
+        background-position: 95% 0%;
+        background-size: 25%;
     }
 
     .container .card .card_social_content {
@@ -566,6 +593,8 @@ p {
     .container .self_care_bg {
         grid-area: self_care_class;
         height: 90%;
+        background-position: 95% 0%;
+        background-size: 25%;
     }
 
     .container .card .card_self_care_content {
@@ -588,3 +617,13 @@ p {
         grid-area: attribution_class;
     }
 }
+
+/* @media (min-width: 1030px) {
+    .container {
+        grid-gap: 20px;
+    }
+
+    .container .user_bg {
+        margin-left: 10%;
+    }
+} */
